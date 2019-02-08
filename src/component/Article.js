@@ -7,13 +7,14 @@ class Article extends Component {
 
     render() {
         const {article} = this.props
+        const style = {width: '50%'}
         const body = this.state.isOpen && <section className="card-text">{article.text}</section>
         return (
-            <div className= "card">
+            <div className= "card mx-auto" style = {style}>
                 <div className="card-header">
                     <h2>
                         {article.title}
-                        <button onClick={this.handleClick} className="btn btn-primary">
+                        <button onClick={this.handleClick} className="btn btn-primary btn-lg float-right">
                             {this.state.isOpen? 'close' : 'open'}
                         </button>
                     </h2>
