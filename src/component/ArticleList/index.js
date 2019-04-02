@@ -1,5 +1,8 @@
 import React from 'react'
-import Article from '../Article'
+import Article from '../Article/Article'
+import NewsBlock from '../News/NewsBlock'
+import FooterBlock from '../FooterBlock/FooterBlock'
+import NavBlock from '../Nav Block/NavBlock'
 import './style.css'
 
 export default function ArticleList ({ articles }) {
@@ -9,8 +12,13 @@ export default function ArticleList ({ articles }) {
         </li>
         )
     return(
-        <ul>
-            {articleElements}
-        </ul>
+        <div>
+            <NavBlock/>
+            <ul>
+                {articleElements}
+            </ul>
+            <NewsBlock/>
+            <FooterBlock/>
+        </div>
     )
 }

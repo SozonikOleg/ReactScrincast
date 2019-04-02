@@ -1,0 +1,13 @@
+div {
+    color:green;
+    font-size: 35 px;
+    h1 {
+        color: blue;
+        &:hover {
+            color: skyblue;
+        }
+    } 
+    p {
+        font-family: serif;
+    }
+}

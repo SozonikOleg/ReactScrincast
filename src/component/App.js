@@ -1,6 +1,7 @@
 import React from 'react'
 import ArticleList from './ArticleList/'
 import articles from '../fixtures'
+import NewsBlock from '../component/News/NewsBlock'
 import 'bootstrap/dist/css/bootstrap.css';
 
 function App(){
@@ -10,6 +11,7 @@ function App(){
                 <h1 className="display-3">App name</h1>
             </div>
                 <ArticleList articles = {articles} />
+                <NewsBlock />
         </div>
     )
 }

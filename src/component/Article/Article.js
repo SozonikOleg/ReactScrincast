@@ -18,6 +18,7 @@ class Article extends Component {
                             {this.state.isOpen? 'close' : 'open'}
                         </button>
                     </h2>
+                    <h3>Hello people!</h3>
                 </div>
                 <div className= "card-body">
                     <h6 className="card-subtitle text-muted">
